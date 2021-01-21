@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .fas {
+    margin-right: 8px;
+  }
+
+  .image-banner {
+    padding-bottom: 50px;
+
+
+  }
+
+  .bg_jumbotron {
+    background-image: url("images/intro-bg_1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+
+  }
+
+  .banner {
+    padding: 5% 3%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+
+  }
+
+  .thcontent {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .foot {
+    background-color: #343a40;
+    color: whitesmoke;
+    margin-top: 30px;
+}
+
+.foot p {
+    margin: 0;
+}
