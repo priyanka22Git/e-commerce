@@ -17,14 +17,6 @@ session_start();
 
 
 <body>
- 
-<?php
-  include 'header.php';
-
-  if(isset($_SESSION['email'])){
-    header('location:products.php');
-  }
-  ?>
 
   <section>
     <div class="jumbotron-fluid bg_jumbotron mb-5">

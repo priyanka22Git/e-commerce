@@ -20,24 +20,6 @@ session_start();
             margin-top: 70px;
         }
 
-        .foot {
-            background-color: #343a40;
-            color: whitesmoke;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-        }
-
-        .foot p {
-            margin: 0;
-            padding: 5px;
-        }
-        .logincard{
-            margin-top: 100px;
-        }
-        .form-control {
-            font-size: 14px;
-        }
         
     </style>
 </head>
@@ -152,11 +134,9 @@ session_start();
         </div>
     </div>
 
-    <footer class="foot">
-        <div class="container text-center">
-            <p> Copyright © Lifestyle Store. All Rights Reserved | Contact Us: +91 90000 00000</p>
-        </div>
-    </footer>
+  <?php 
+  include 'footer.php';
+  ?>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
