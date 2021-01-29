@@ -19,6 +19,19 @@ session_start();
         body {
             margin-top: 70px;
         }
+          
+       .foot {
+            background-color: #343a40;
+            color: whitesmoke;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .foot p {
+            margin: 0;
+            padding: 5px;
+        }
 
         
     </style>
