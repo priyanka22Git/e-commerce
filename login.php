@@ -64,7 +64,7 @@ session_start();
                 </script>
                 
                 <?php
-                header('location:index.php');
+                header('location:products.php');
             }else{
                 ?>
                 <script>
