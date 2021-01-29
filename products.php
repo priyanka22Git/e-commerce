@@ -1,6 +1,9 @@
 <?php
 
 session_start();
+if(!isset($_SESSION['name'])) {
+    header('location:login.php');
+}
 ?>
 
 
@@ -58,14 +61,7 @@ session_start();
 
     <?php
    include 'common.php';
-    
-   
-
-
-
-
-
-   ?>
+    ?>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -86,7 +82,7 @@ session_start();
                     </li>
                 </ul>
                 <div>
-                    <a href="cart.php" class="  btn btn-sm btn-outline-success"> cart(0)</a>
+                    <button class=" btn btn-sm btn-outline-success"><?php echo $_SESSION['name']; ?></button>
                 </div>
             </div>
         </div>
