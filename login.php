@@ -33,18 +33,18 @@ session_start();
         $email= $_POST['email'];
         $password=$_POST['password'];
 
-        $email_search= "select * from users where email='$email'";
-        $query=mysqli_query($con,$email_search);
+        $emailsearch= "select * from users where email='$email'";
+        $query=mysqli_query($con,$emailsearch);
         
-        $email_count= mysqli_num_rows($query);
+        $emailcount= mysqli_num_rows($query);
 
-        if($email_count){
-            $email_pass=mysqli_fetch_assoc($query);
-            $db_pass= $email_pass['password'];
-            $_SESSION['name']=$email_pass['name'];
-            $pass_decode=password_verify($password,$db_pass);
+        if($emailcount){
+            $emailpass=mysqli_fetch_assoc($query);
+            $dbpass= $email_pass['password'];
+            $_SESSION['name']=$emailpass['name'];
+            $passdecode=password_verify($password,$dbpass);
 
-            if($pass_decode){
+            if($passdecode){
                 ?>
                 <script>
                     alert("login successful");
@@ -111,7 +111,7 @@ session_start();
                 <div class="card-body">
                     <p class="text-danger"><i>Login to make a purchase</i></p>
 
-                    <form action=products.php method="post">
+                    <form action="#" method="post">
                         <div class="form-group">
                             <label for="email"></label>
                             <input type="email" name="email" class="form-control" placeholder="Email" id="email">
