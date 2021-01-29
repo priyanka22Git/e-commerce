@@ -40,7 +40,7 @@ session_start();
 
         if($emailcount){
             $emailpass=mysqli_fetch_assoc($query);
-            $dbpass= $email_pass['password'];
+            $dbpass= $emailpass['password'];
             $_SESSION['name']=$emailpass['name'];
             $passdecode=password_verify($password,$dbpass);
 
